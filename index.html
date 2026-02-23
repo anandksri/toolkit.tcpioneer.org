@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TC Pioneer | Tools</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/061159ef9c2398b970d2cd5f5580f7cd?family=Gagalin" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="text-white overflow-x-hidden">
+
+
+
+    <nav id="navbar" class="fixed top-0 w-full px-6 md:px-16 py-4 flex justify-between items-center z-50
+    bg-[#0b0b10]/80 backdrop-blur border-b border-white/5">
+
+        <div class="text-violet-500 font-semibold text-xl tracking-wide">
+            TC Pioneer Tools
+        </div>
+
+        <!-- DESKTOP -->
+        <div class="hidden md:flex items-center space-x-10 text-gray-400">
+            <a href="/" class="hover:text-white">Home</a>
+            <a href="#tools" class="hover:text-white">Tools</a>
+            <a href="https://tcpioneer.org/joinus" target="_blank"
+                class="border border-violet-500 px-4 py-1 rounded-md text-violet-500 hover:bg-violet-500 hover:text-black transition">
+                Join Us
+            </a>
+        </div>
+
+        <!-- MOBILE BUTTON -->
+        <div id="menuToggle" class="md:hidden text-2xl cursor-pointer">☰</div>
+    </nav>
+    <div id="mobileMenu" class="fixed top-0 left-0 h-full w-[80%] max-w-[320px] bg-[#0b0b10] 
+    flex flex-col gap-8 pt-20 px-8 z-[999]
+    transform -translate-x-full transition-transform duration-300 ease-in-out">
+
+        <!-- CLOSE BUTTON -->
+        <div id="closeMenu" class="absolute top-6 right-6 text-2xl cursor-pointer text-gray-400 hover:text-white">
+            ✕
+        </div>
+
+        <a href="/" class="mobile-link">Home</a>
+        <a href="#tools" class="mobile-link">Tools</a>
+        <a href="https://tcpioneer.org/joinus" target="_blank" class="mobile-link text-violet-500">Join Us</a>
+    </div>
+
+    <!-- OVERLAY -->
+    <div id="overlay"
+        class="fixed inset-0 bg-black/50 backdrop-blur-sm opacity-0 pointer-events-none transition duration-300 z-[998]">
+    </div>
+
+
+    <!-- HERO -->
+    <section id="hero" class="hero-section">
+
+        <div class="hero-bg"></div>
+        <div class="cursor-glow" id="cursorGlow"></div>
+
+        <div class="hero-content">
+
+            <div class="badge fade-in">
+                TCP Tools • Cybersecurity Platform
+            </div>
+
+            <!-- LOGO -->
+            <div class="logo-container fade-in delay">
+                <div class="gear inner"></div>
+                <div class="gear"></div>
+                <img src="assets/images/tcp-logo.png" class="logo-img" id="logo" alt="TC Pioneer - Logo">
+            </div>
+
+            <!-- TITLE -->
+            <h1 id="typing" class="hero-title"></h1>
+
+            <!-- DESCRIPTION -->
+            <p class="hero-desc">
+                A minimal and powerful platform designed to explore cybersecurity tools,
+                analyze threats, and enhance digital security.
+            </p>
+
+            <!-- BUTTONS -->
+            <div class="hero-buttons">
+
+                <a href="#tools" class="btn primary">
+                    Explore Tools
+                </a>
+
+                <a href="https://tcpioneer.org" class="btn secondary">
+                    Visit Main Site
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section id="tools" class="px-6 md:px-16 py-24">
+
+        <!-- HEADER -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-semibold mb-3">Tools</h2>
+            <p class="text-gray-400 text-sm">Explore powerful cybersecurity utilities</p>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="max-w-xl mx-auto mb-12">
+            <input id="searchInput" type="text" placeholder="Search tools..." class="w-full px-5 py-3 rounded-lg bg-[#111118] border border-white/10 text-sm outline-none
+            focus:border-violet-500 focus:ring-1 focus:ring-violet-500 transition">
+        </div>
+
+        <!-- GRID -->
+        <div id="toolsGrid" class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+
+            <!-- CARD -->
+            <div class="tool-card p-6 rounded-xl" data-name="phishing detector url security">
+                <div class="mb-4 text-violet-500">
+                    <i data-lucide="shield-check"></i>
+                </div>
+                <h3 class="mb-2 text-lg font-semibold">Phishing Detector</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Identify malicious URLs and detect phishing attempts instantly.
+                </p>
+                <a href="/phishing-detector/" class="tool-link">Open Tool →</a>
+            </div>
+
+            <!-- CARD -->
+            <div class="tool-card p-6 rounded-xl" data-name="password checker security strength">
+                <div class="mb-4 text-violet-500">
+                    <i data-lucide="lock"></i>
+                </div>
+                <h3 class="mb-2 text-lg font-semibold">Password Checker</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Analyze password strength and improve your account security.
+                </p>
+                <a href="/password-checker/" class="tool-link">Open Tool →</a>
+            </div>
+
+            <!-- CARD -->
+            <div class="tool-card p-6 rounded-xl" data-name="qr generator code share">
+                <div class="mb-4 text-violet-500">
+                    <i data-lucide="qr-code"></i>
+                </div>
+                <h3 class="mb-2 text-lg font-semibold">QR Generator</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Generate secure and customizable QR codes easily.
+                </p>
+                <a href="/qr-generator/" class="tool-link">Open Tool →</a>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="mt-20 border-t bg-[#0b0b10] border-white/5 pt-10 pb-6 px-6 md:px-16">
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+            <!-- LEFT -->
+            <div class="text-gray-400 text-sm text-center md:text-left">
+                © 2026 TCPioneer • Build • Break • Secure
+            </div>
+
+            <!-- SOCIAL ICONS -->
+            <div class="flex gap-6 text-gray-400 text-lg">
+
+                <a href="https://www.instagram.com/tcpioneerorg" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/tcpioneerorg" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/company/tcpioneerorg" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</body>
+
+</html>
