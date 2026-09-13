@@ -1,6 +1,6 @@
-# TCPioneer Security Toolkit
+# TC Pioneer Security Toolkit
 
-A collection of small browser-based security and utility tools built for The Cyber Pioneer.
+A collection of small browser-based security and utility tools built for TC Pioneer.
 
 ## Tools
 
@@ -45,7 +45,7 @@ These tools are intended for learning and basic utility purposes. Results should
 
 ## Project
 
-Part of The Cyber Pioneer ecosystem and my work in cybersecurity education, security research, and software development.
+Part of the TC Pioneer ecosystem and my work in cybersecurity education, security research, and software development.
 
 ## Author
 
